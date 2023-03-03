@@ -1,0 +1,39 @@
+﻿<Window x:Class="Proyecto.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto"
+        mc:Ignorable="d"
+        Title="Login" Height="471" Width="800"
+        WindowStyle="None" AllowsTransparency="True"
+        MouseDown="movible_MouseDown_1"
+        >
+    <Grid Height="471" VerticalAlignment="Center" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/assets/descargar.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btn_minimizar" Focusable="False" Content="" Margin="756,0,0,417" Click="btn_minimizar_Click" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush ImageSource="/assets/7260982.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minimizar" Focusable="False" Content="" Margin="707,0,49,417" Click="minimizar_Click" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush TileMode="FlipX" ImageSource="/assets/7456368.png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="imagen" Margin="312,10,304,286" Source="/assets/free-user-icon-3296-thumb.png"/>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Margin="186,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="457" Height="44" FontSize="24" Text=""/>
+        <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="186,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="457" Height="44" FontSize="24"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="64" Margin="117,171,0,0" VerticalAlignment="Top" Width="66" Source="/assets/21104.png"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="52" Margin="129,258,0,0" VerticalAlignment="Top" Width="55" Source="/assets/Icons8-Windows-8-Security-Password-2.ico"/>
+        <Button x:Name="button" Focusable="False" Content="" Margin="277,315,269,90" BorderBrush="Transparent" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/assets/iniciar sesion (1).png"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="img_error" Margin="283,386,280,21" Source="/assets/iniciar_sesion__2_-removebg-preview.png"/>
+
+    </Grid>
+</Window>

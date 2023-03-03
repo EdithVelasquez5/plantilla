@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="21104.png" />
+    <None Remove="53676769.jpg" />
+    <None Remove="71OcDxpY+zL._AC_UF1000,1000_QL80_.jpg" />
+    <None Remove="7260982.png" />
+    <None Remove="7456368.png" />
+    <None Remove="9788467062151.jpg" />
+    <None Remove="assets\53676769.jpg" />
+    <None Remove="assets\71OcDxpY+zL._AC_UF1000,1000_QL80_.jpg" />
+    <None Remove="assets\9788467062151.jpg" />
+    <None Remove="assets\chernobyl.jpg" />
+    <None Remove="assets\javascript-devinitivo-vol1.png" />
+    <None Remove="assets\largepreview.png" />
+    <None Remove="assets\p13890211_b_v13_aq.jpg" />
+    <None Remove="chernobyl.jpg" />
+    <None Remove="descargar %284%29.jpg" />
+    <None Remove="descargar.jpg" />
+    <None Remove="free-user-icon-3296-thumb.png" />
+    <None Remove="Gráfico de Pastel Circular Comparativo Moderno Limpio Rosa Claro.png" />
+    <None Remove="Icons8-Windows-8-Security-Password-2.ico" />
+    <None Remove="iniciar sesion %281%29.png" />
+    <None Remove="iniciar_sesion__2_-removebg-preview.png" />
+    <None Remove="javascript-devinitivo-vol1.png" />
+    <None Remove="largepreview.png" />
+    <None Remove="Libros.png" />
+    <None Remove="p13890211_b_v13_aq.jpg" />
+    <None Remove="PROGRA.png" />
+    <None Remove="Tarjeta de Bienvenida con Círculos Azul, Rosa y Amarillo.png" />
+    <None Remove="tronos.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Plus" Version="1.0.0" />
+    <PackageReference Include="LiveCharts.WinForms" Version="0.9.7.1" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf.Core" Version="0.9.8" />
+    <PackageReference Include="LiveCharts.Wpf.FixTooltip" Version="0.9.8" />
+    <PackageReference Include="LiveCharts.Wpf.NetCore3" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\21104.png" />
+    <Resource Include="assets\53676769.jpg" />
+    <Resource Include="assets\71OcDxpY+zL._AC_UF1000,1000_QL80_.jpg" />
+    <Resource Include="assets\7260982.png" />
+    <Resource Include="assets\7456368.png" />
+    <Resource Include="assets\9788467062151.jpg" />
+    <Resource Include="assets\chernobyl.jpg" />
+    <Resource Include="assets\descargar.jpg" />
+    <Resource Include="assets\free-user-icon-3296-thumb.png" />
+    <Resource Include="assets\Icons8-Windows-8-Security-Password-2.ico" />
+    <Resource Include="assets\iniciar sesion %281%29.png" />
+    <Resource Include="assets\javascript-devinitivo-vol1.png" />
+    <Resource Include="assets\largepreview.png" />
+    <Resource Include="assets\p13890211_b_v13_aq.jpg" />
+    <Resource Include="assets\Tarjeta de Bienvenida con Círculos Azul, Rosa y Amarillo.png" />
+    <Resource Include="assets\iniciar_sesion__2_-removebg-preview.png" />
+    <Resource Include="assets\tronos.jpg" />
+    <Resource Include="assets\descargar %284%29.jpg" />
+    <Resource Include="assets\Gráfico de Pastel Circular Comparativo Moderno Limpio Rosa Claro.png" />
+    <Resource Include="Libros.png" />
+    <Resource Include="PROGRA.png" />
+  </ItemGroup>
+
+</Project>

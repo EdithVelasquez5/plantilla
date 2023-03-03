@@ -1,0 +1,252 @@
+﻿<Window x:Class="Proyecto.pantalla_de_informacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="pantalla_de_informacion" Height="450" Width="800"
+        WindowStyle="None" AllowsTransparency="True" MouseDown="Window_MouseDown"
+        >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/assets/descargar.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btn_minimizar" Focusable="False" Content="" Margin="756,0,0,396" Click="btn_minimizar_Click" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush ImageSource="/assets/7260982.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minimizar" Focusable="False" Content="" Margin="707,0,49,396" Click="minimizar_Click" BorderBrush="Transparent">
+            <Button.Background>
+                <ImageBrush TileMode="FlipX" ImageSource="/assets/7456368.png"/>
+            </Button.Background>
+        </Button>
+        <TabControl x:Name="tabControl" Margin="0,54,0,0">
+            <TabItem Header="Programas de entretenimiento" BorderBrush="#FFACACAC">
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                </TabItem.Background>
+                <Grid Margin="0,0,-9,0">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                    </Grid.Background>
+                    <TabControl x:Name="tabControl1">
+                        <TabControl.Background>
+                            <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                        </TabControl.Background>
+                        <TabItem Header="Game of throne">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="131*"/>
+                                    <ColumnDefinition Width="666*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="230" Margin="10,44,0,0" VerticalAlignment="Top" Width="260" Source="/assets/tronos.jpg"/>
+                                <TextBlock x:Name="textBlock" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="194" Width="232" Margin="81,62,0,0"><Run Text="La trama de Game of"/><LineBreak/><Run Text="Thrones está basada en la serie"/><LineBreak/><Run Text="de novelas Canción de hielo y"/><LineBreak/><Run Text="fuego, y relata las vivencias de"/><LineBreak/><Run Text="un grupo de personajes de"/><LineBreak/><Run Text="distintas casas nobiliarias en el"/><LineBreak/><Run Text="continente ficticio Poniente para"/><LineBreak/><Run Text="tener el control del Trono de"/><LineBreak/><Run Text="Hierro y gobernar los siete"/><LineBreak/><Run Text="reinos que conforman el"/><LineBreak/><Run Text="territorio"/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="194" Width="232" Margin="377,67,0,0"><Run Language="es-mx" Text="Titulo en espa"/><Run Language="es-sv" Text="ñ"/><Run Language="es-mx" Text="ol: Juego de tronos"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Creado por:"/><LineBreak/><Run Language="es-mx" Text="-David Benioff"/><LineBreak/><Run Language="es-mx" Text="-"/><Run Language="es-sv" Text="D.B Weiss"/><LineBreak/><Run Language="es-sv"/><LineBreak/><Run Language="es-sv" Text="pais de origen"/><Run Language="es-mx" Text=":  Estados Unidos"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Temporada: 8"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Capitulos: 71"/><LineBreak/><Run Language="es-sv"/><LineBreak/><Run Language="es-sv"/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Chernobyl">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="131*"/>
+                                    <ColumnDefinition Width="187*"/>
+                                    <ColumnDefinition Width="479*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Left" Margin="171,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="152" Width="192" Grid.ColumnSpan="2"><Run Text="La serie gira en torno al desastre"/><LineBreak/><Run Text="nuclear de Chernóbil de abril de"/><LineBreak/><Run Text="1986 y los esfuerzos de limpieza"/><LineBreak/><Run Text="sin precedentes que siguieron."/><LineBreak/><Run Text="Cuenta con un reparto"/><LineBreak/><Run Text="encabezado por Jared Harris,"/><LineBreak/><Run Text="Stellan Skarsgård y Emily"/><LineBreak/><Run Text="Watson"/></TextBlock>
+                                <TextBlock x:Name="textBlock2" Grid.Column="1" HorizontalAlignment="Left" Margin="171,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="142" Width="155" Grid.ColumnSpan="2"><Run Language="es-mx" Text="Titulo en es"/><Run Language="es-sv" Text="pañol"/><Run Language="es-mx" Text=": Chernóbi"/><Run Language="es-mx" Text="l"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Creado por: Craig Mazin"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx"/></TextBlock>
+                                <TextBlock x:Name="textBlock3" Grid.Column="2" HorizontalAlignment="Left" Margin="213,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="232"><Run Language="es-mx" Text="Pais de origen: Estados unidos / Reino Unido"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Temporada: 1"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Episodio: 5"/></TextBlock>
+                                <Image x:Name="image1" HorizontalAlignment="Left" Height="171" Margin="49,107,0,0" VerticalAlignment="Top" Width="231" Grid.ColumnSpan="2" Source="/assets/chernobyl.jpg"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="THE MARVELOUS MRS.MAISEL">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="10*"/>
+                                    <ColumnDefinition Width="23*"/>
+                                    <ColumnDefinition Width="764*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image2" Grid.Column="2" HorizontalAlignment="Left" Height="251" VerticalAlignment="Center" Width="210" Source="/assets/p13890211_b_v13_aq.jpg"/>
+                                <TextBlock x:Name="textBlock4" Grid.Column="2" HorizontalAlignment="Left" Margin="213,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="164" Width="219"><Run Text="La serie cuenta la historia de un"/><LineBreak/><Run Text="ama de casa en Nueva York que"/><LineBreak/><Run Text="descubre que tiene una habilidad"/><LineBreak/><Run Text="especial para la comedia en vivo."/><LineBreak/><Run Text="El primer episodio se estrenó"/><LineBreak/><Run Text="como parte de la temporada de"/><LineBreak/><Run Text="pilotos de primavera de Amazon"/><LineBreak/><Run Text="Studios el 17 de marzo de 2017,"/><LineBreak/><Run Text="recibiendo la aclamación de la"/><LineBreak/><Run Text="crítica"/></TextBlock>
+                                <TextBlock x:Name="textBlock3_Copy" Grid.Column="2" HorizontalAlignment="Left" Margin="458,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="232"><Run Text="Pais de origen: Estados unidos"/><LineBreak/><Run/><LineBreak/><Run Text="Temporada: "/><Run Language="es-mx" Text="3"/><LineBreak/><Run/><LineBreak/><Run Text="Episodio: "/><Run Language="es-mx" Text="26"/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Libros" BorderBrush="#FFACACAC" HorizontalAlignment="Left" Width="44">
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="123*"/>
+                        <ColumnDefinition Width="102*"/>
+                        <ColumnDefinition Width="554*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                    </Grid.Background>
+                    <TabControl x:Name="tabControl2" BorderBrush="Transparent" Grid.ColumnSpan="4">
+                        <TabItem Header="HARRY POTTER">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="111*"/>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="666*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image3" HorizontalAlignment="Left" Height="279" Margin="53,0,0,0" VerticalAlignment="Center" Width="183" Source="/assets/descargar (4).jpg" Grid.ColumnSpan="3"/>
+                                <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="128,48,0,0" Grid.Column="2"><Run Text="La historia comienza con la"/><LineBreak/><Run Text="celebración del mundo mágico."/><LineBreak/><Run Text="Durante muchos años, había sido"/><LineBreak/><Run Text="aterrorizado por el"/><LineBreak/><Run Text="malvado mago Lord Voldemort."/><LineBreak/><Run Text="La noche del 31 de octubre,"/><LineBreak/><Run Text="mató a Lily"/><LineBreak/><Run Text="y James Potter. Sin"/><LineBreak/><Run Text="embargo, cuando intenta matar a"/><LineBreak/><Run Text="su hijo de 1 año, Harry, la"/><LineBreak/><Run Text="maldición asesina Avada"/><LineBreak/><Run Text="Kedavra se vuelve sobre sí"/><LineBreak/><Run Text="mismo."/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="371,53,0,0" Grid.Column="2"><Run Language="es-mx" Text="Genero: Novelas"/><LineBreak/><Run/><LineBreak/><Run Text="Creado por:"/><Run Language="es-mx" Text=" J.K Rowlin"/><LineBreak/><Run/><LineBreak/><Run Language="es-mx" Text="Protagonistas:"/><LineBreak/><Run Language="es-mx" Text="Harry Potter"/><LineBreak/><Run Language="es-mx" Text="Ron weasley"/><LineBreak/><Run Language="es-mx" Text="Hermione Granger"/><LineBreak/><Run Language="es-mx" Text="Ginny Weasley"/><LineBreak/><Run Language="es-mx" Text="Neville Longbottom"/><LineBreak/><Run Language="es-mx" Text="Albus Dumbledore"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="GOOSEBUMPS">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="11*"/>
+                                    <ColumnDefinition Width="231*"/>
+                                    <ColumnDefinition Width="547*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image3_Copy" HorizontalAlignment="Left" Height="279" Margin="42,0,0,0" VerticalAlignment="Center" Width="183" Source="/assets/71OcDxpY+zL._AC_UF1000,1000_QL80_.jpg" Grid.Column="1"/>
+                                <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="8,48,0,0" Grid.Column="2"><Run Text="La serie consta de un total de 60"/><LineBreak/><Run Text="libros para España, el último de"/><LineBreak/><Run Text="los cuales (Sangre de monstruo"/><LineBreak/><Run Text="IV) se publicó en 1999, mientras"/><LineBreak/><Run Text="que en Hispanoamérica consta"/><LineBreak/><Run Text="de 45 historias."/><LineBreak/><Run Text="El nombre se tradujo en España"/><LineBreak/><Run Text="como Pesadillas y en"/><LineBreak/><Run Text="Hispanoamérica"/><LineBreak/><Run Text="como Escalofríos."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="252,48,0,0" Grid.Column="2"><Run Text="Genero: Ciencia ficción, literatura"/><LineBreak/><Run Text="infantil y suspenso"/><LineBreak/><Run/><LineBreak/><Run Text="Creado por:"/><Run Text=" Robert Lawrence Stine"/><LineBreak/><Run/><LineBreak/><Run Text="Protagonistas:"/><LineBreak/><Run Text="El protagonista principal de una"/><LineBreak/><Run Text="historia de Pesadillas /"/><LineBreak/><Run Text="Escalofríos, es a menudo situado"/><LineBreak/><Run Text="en una ubicación remota o de"/><LineBreak/><Run Text="alguna manera aislada en"/><LineBreak/><Run Text="algunas situaciones."/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem Header="PERRY MASON">
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="29*"/>
+                                    <ColumnDefinition Width="63*"/>
+                                    <ColumnDefinition Width="696*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image x:Name="image3_Copy1" HorizontalAlignment="Left" Height="279" Margin="24,0,0,0" VerticalAlignment="Center" Width="183" Source="/assets/9788467062151.jpg" Grid.Column="1" Grid.ColumnSpan="2"/>
+                                <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="158,48,0,0" Grid.Column="2"><Run Text="El personaje era un abogado que"/><LineBreak/><Run Text="llegó a aparecer en 80 novelas e"/><LineBreak/><Run Text="historias cortas, la mayoría de"/><LineBreak/><Run Text="las cuales versaban sobre la"/><LineBreak/><Run Text="defensa de un cliente que había"/><LineBreak/><Run Text="sido acusado de asesinato. En"/><LineBreak/><Run Text="general, Perry Mason era capaz"/><LineBreak/><Run Text="de demostrar la inocencia de su"/><LineBreak/><Run Text="cliente mediante la averiguación"/><LineBreak/><Run Text="de la culpabilidad del verdadero"/><LineBreak/><Run Text="asesino, otro personaje de la"/><LineBreak/><Run Text="historia."/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="401,48,0,0" Grid.Column="2"><Run Text="Genero: Novela policiaca"/><LineBreak/><Run/><LineBreak/><Run Text="Creado por:"/><Run Text=" Erle Stanley Gardner"/><LineBreak/><Run/><LineBreak/><Run Text="Protagonistas:"/><LineBreak/><Run Text="Perry Mason"/><LineBreak/><Run/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Programacion" BorderBrush="Transparent">
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="167*"/>
+                        <ColumnDefinition Width="12*"/>
+                        <ColumnDefinition Width="615*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                    </Grid.Background>
+                    <TabControl x:Name="tabControl3" Grid.ColumnSpan="3">
+                        <TabItem Header="Python">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="24*"/>
+                                    <ColumnDefinition Width="239*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="49*"/>
+                                    <RowDefinition Height="19*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image3_Copy2" HorizontalAlignment="Left" Height="279" Margin="53,31,0,0" VerticalAlignment="Top" Width="183" Source="/assets/53676769.jpg" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                                <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="178,48,0,0" Grid.RowSpan="2" Grid.Column="1"><Run Language="es-mx" Text="Paradigma:"/><LineBreak/><Run Language="es-mx"/><Run Text="Multiparadigma: orientado a"/><LineBreak/><Run Text="objetos, imperativo, funcional,"/><LineBreak/><Run Text="reflexivo"/><Run Language="es-mx" Text="."/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Version: 3.8.3"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Licencia: Python Software Foundation"/><LineBreak/><Run Language="es-mx" Text="License"/><LineBreak/><Run Language="es-mx"/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="422,48,0,0" Grid.RowSpan="2" Grid.Column="1"><Run Language="es-mx" Text="Extensiones:"/><LineBreak/><Run Language="es-mx" Text=".py, .pyc, .pyd, .pyo, .pyw, .pyz"/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Desarrolladores:"/><LineBreak/><Run Language="es-mx" Text="Python Software Foundation "/><LineBreak/><Run Language="es-mx"/><LineBreak/><Run Language="es-mx" Text="Sistema Operativo:"/><LineBreak/><Run Language="es-mx" Text="Mulltisistemas"/><LineBreak/><Run Language="es-mx"/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Java">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="106*"/>
+                                    <ColumnDefinition Width="15*"/>
+                                    <ColumnDefinition Width="667*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image3_Copy3" HorizontalAlignment="Left" Height="279" Margin="53,0,0,0" VerticalAlignment="Center" Width="183" Source="/assets/largepreview.png" Grid.ColumnSpan="3"/>
+                                <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="130,48,0,0" Grid.Column="2"><Run Text="Paradigma:"/><LineBreak/><Run Language="es-mx" Text="Orientado a objetos, imperativos"/><LineBreak/><Run/><LineBreak/><Run Text="Version: "/><Run Language="es-mx" Text="14.01"/><LineBreak/><Run/><LineBreak/><Run Text="Licencia"/><Run Language="es-mx" Text=" GNU CPL"/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy10" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="374,48,0,0" Grid.Column="2"><Run Text="Extensiones:"/><LineBreak/><Run Text="java, class, jar, jad y jmod"/><LineBreak/><Run/><LineBreak/><Run Text="Desarrolladores:"/><LineBreak/><Run Text="James Gosling y Sun"/><LineBreak/><Run Text="Microsystems"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="Sistema Operativo:"/><LineBreak/><Run Text="Mulltisistemas"/><LineBreak/><Run/></TextBlock>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Javascript">
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image3_Copy4" HorizontalAlignment="Left" Height="279" Margin="53,0,0,0" VerticalAlignment="Center" Width="183" Source="assets/javascript-devinitivo-vol1.png"/>
+                                <TextBlock x:Name="textBlock_Copy11" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="210" Margin="250,48,0,0"><Run Text="Paradigma:"/><LineBreak/><Run Text=" Multiparadigma, programación"/><LineBreak/><Run Text="funcional,"/><Run Text=" "/><Run Text=" programación basada"/><LineBreak/><Run Text="en"/><Run Text=" "/><Run Text="prototipos, imperativo, interpretado (scripting)"/><LineBreak/><Run/><LineBreak/><Run Text="Version: ECMAScript2016"/><LineBreak/><Run/><LineBreak/><Run Text="Licencia"/><Run Text=" GNU CPL"/><LineBreak/><Run/></TextBlock>
+                                <TextBlock x:Name="textBlock_Copy12" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="222" Width="285" Margin="494,48,0,0"><Run Text="Extensiones:"/><LineBreak/><Run Language="es-mx" Text="JS"/><LineBreak/><Run/><LineBreak/><Run Text="Desarrolladores:"/><LineBreak/><Run Language="es-mx" Text="Desconocido"/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="Sistema Operativo:"/><LineBreak/><Run Text="Mulltisistemas"/><LineBreak/><Run/></TextBlock>
+                            </Grid>
+                        </TabItem>
+
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Estadistica" BorderBrush="#FFACACAC" Height="20" VerticalAlignment="Bottom">
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                </TabItem.Background>
+                <Grid>
+
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                    </Grid.Background>
+                    <TabControl x:Name="tabControl4">
+                        <TabItem Header="Programas">
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image4" HorizontalAlignment="Left" Height="290" Margin="137,0,0,0" VerticalAlignment="Center" Width="628" Source="/assets/Gráfico de Pastel Circular Comparativo Moderno Limpio Rosa Claro.png"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Libros">
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image5" HorizontalAlignment="Left" Height="297" Margin="176,10,0,0" VerticalAlignment="Top" Width="628" Source="/Libros.png"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Programacion" BorderBrush="Transparent">
+                            <Grid>
+                                <Grid.Background>
+                                    <ImageBrush ImageSource="/assets/descargar.jpg"/>
+                                </Grid.Background>
+                                <Image x:Name="image6" HorizontalAlignment="Left" Height="283" Margin="219,10,0,0" VerticalAlignment="Top" Width="550" Source="/PROGRA.png"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
